@@ -1,0 +1,10 @@
+x= int(input('Please enter an integer:'))
+y= int(input('Please enter a second integer:'))
+z= int(input('Please enter a third integer:'))
+maxN=x
+if y>x:
+     maxN=y
+if z>x:
+     maxN=z
+print(maxN,"is the greatest.")
+print('Sorting complete.')
