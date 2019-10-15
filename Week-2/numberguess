@@ -7,17 +7,17 @@ guess=int(guess)
 
 if guess==num:
      print("Correct!")
-else:
+elif guess!=num:
      print("Make another guess.")
      guess= input()
      if guess==num:
           print("Correct!")
-     else:
+     elif guess!=num:
          print("Make one final guess.")
          guess= input()
          if guess==num:
              print("Yeah! You're correct!")
-         else:
+         elif guess!=num:
              print("Oh no! Game Over!")
 
 
