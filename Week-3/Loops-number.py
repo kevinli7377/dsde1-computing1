@@ -1,3 +1,2 @@
-
-for n in range(0,11):
+for n in range(10,-1,-1):
      print(n)
