@@ -1,2 +1,4 @@
-for n in range(10,-1,-1):
-     print(n)
+n=11
+while n >0:
+     print(n-1)
+     n=n-1
