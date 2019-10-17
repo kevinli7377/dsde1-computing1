@@ -5,7 +5,7 @@ guess= input()
 guess=int(guess)
 
 
-if guess==num:
+if guess==num:pyt
      print("Correct!")
 elif guess!=num:
      print("Make another guess.")
