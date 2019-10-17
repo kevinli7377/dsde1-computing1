@@ -9,20 +9,20 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 def inc(a):
-    print(a)
+    print(a+1)
 
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return # hint this is incomplete
+    return (a+1)# hint this is incomplete
 
 
 # write a function that adds
 # the two input numbers together
 # and returns the sum
 def sum(a, b):
-    return
+    return (a+b)
 
 
 # write a function that takes two
