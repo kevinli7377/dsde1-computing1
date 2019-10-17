@@ -37,7 +37,10 @@ def sum_inc(a, b):
 # boolean (True or False) for whether 
 # the input number is even
 def is_even(a):
-    return
+    if a%==0:
+        return True
+    else:
+        return False
 
 
 # create for loop that takes a string
