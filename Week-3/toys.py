@@ -9,14 +9,14 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 def inc(a):
-    a=input()
-    print(a+1)
+    print(int(a)+1)
 
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return (a+1)# hint this is incomplete
+    return (a+1)
+    # hint this is incomplete
 
 
 # write a function that adds
@@ -55,3 +55,15 @@ def string_repeat(phrase, repeat):
     # hint: you can add strings together 
     # in order to concatenate them
     return phrase*int(repeat)
+
+print(inc(1))
+
+print(inc_return(2))
+
+print(sum(1,2))
+
+print(sum_inc(1,2))
+
+print (is_even(9))
+
+print (string_repeat('Kevin',2))
