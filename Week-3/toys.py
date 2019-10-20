@@ -32,7 +32,8 @@ def sum(a, b):
 # using inc_return
 def sum_inc(a, b):
      sum(a,b)
-     inc_return(sum(a,b)+1)
+     return (inc_return(sum(a,b)))
+     
 
 
 # write a function that returns a 
@@ -56,7 +57,7 @@ def string_repeat(phrase, repeat):
     # in order to concatenate them
     return phrase*int(repeat)
 
-print(inc(1))
+inc(1) #cannot use print(). print()would cause print a+1 as well as None.
 
 print(inc_return(2))
 

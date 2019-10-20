@@ -5,6 +5,7 @@ def period(L,g):
           first= math.sqrt(L/g)
           tperiod= (2*math.pi*first)
           return tperiod
+     #except TypeError:
      #except ZeroDivisionError:
         #return ('The value of gravity cannot be equal to zero.')
      
