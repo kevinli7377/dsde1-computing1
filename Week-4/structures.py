@@ -20,8 +20,9 @@ def first_and_last(the_list):
 # If "end" is greater then "beginning" or any og the indices is out of the
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
-     if the_list[beginning]<the_list[end]:
-         return the_list[beginning+1:end].sort(reverse=True)
+     if beginning<end:
+         the_list = the_list[beginning+1:end]
+         return the_list[::-1]
      else: 
          raise ValueError
 
@@ -42,7 +43,7 @@ def repeat_at_index(the_list, index):
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
 def palindrome_word(word):
-    word=word.lower()
+    word = word.lower()
     wordreverse= word[::-1]
     if wordreverse==word:
          print("It's a palindrome.")
@@ -58,12 +59,12 @@ def palindrome_word(word):
 def palindrome_sentence(sentence):
     import string as str
     for i in range(len(str.punctuation)):
-        punctuation=(str.punctuation[i])
-        sentence=sentence.replace(punctuation,'')
-    sentence=sentence.replace(' ','')
-    sentence=sentence.lower()
-    sentencereverse=sentence[::-1]
-    if sentencereverse==sentence:
+        punctuation = (str.punctuation[i])
+        sentence = sentence.replace(punctuation,'')
+    sentence = sentence.replace(' ','')
+    sentence = sentence.lower()
+    sentencereverse = sentence[::-1]
+    if sentencereverse == sentence:
         print ("It's a palindrome.")
     else:
         print('It is not a palindrome')
@@ -119,7 +120,7 @@ def is_lowercase(sentence):
 # write a function that checks whether there is a record with given key in the
 # dictionary. Return True or False.
 def index_exists(dictionary, key):
-    if key in dictionary.keys:
+    if key in dictionary.keys():
         return True
     else:
         return False
