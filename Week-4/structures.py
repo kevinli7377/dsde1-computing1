@@ -1,9 +1,10 @@
 '''
 structures.py
 
-Simple functions performing operations on basic Python data structures.  
-'''
+Simple functions performing operations on basic Python data structures.
 
+The code here was completed by Kevin Li on October 24 2019.
+'''
 # Lists
 
 # write a function that returns a list containig the first and the last element
@@ -140,7 +141,7 @@ dictionary1={'fun':'2','happy':'4'}
 # from dictionary1 and dictionary2.
 def merge_dictionaries(dictionary1, dictionary2):
     newdictionary= dict(**dictionary1,**dictionary2)
-    print (newdictionary)
+    return (newdictionary)
 
 if __name__=='_main_':
      main()
